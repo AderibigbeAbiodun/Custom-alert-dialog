@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Dialog</title>
+    <script defer src="alert-dialog.js"></script>
+</head>
+<body>
+
+    <button onclick="alertDialog();">Show Alert</button>
+
+
+    <script>
+
+        function alertDialog(){
+
+            alert_dialog({
+                title: "Title",
+                content: "Hello World!!!",
+                action: true,
+                actionBtn: ['NO','YES'],
+                actionColor: ['#89f302','#000000'],
+                actionSize: ['8px','8px'],
+                onapprove: function(){
+                    console.log("Okay click");
+                }
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
